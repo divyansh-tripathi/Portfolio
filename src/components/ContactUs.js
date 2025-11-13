@@ -91,20 +91,19 @@ export default function ContactUs() {
       return;
     }
 
-const templateParams = {
-  from_name: form.name,
-  from_email: form.email,
-  message: form.message,
-  time: new Date().toLocaleString(),
-};
-
+    const templateParams = {
+      from_name: form.name,
+      from_email: form.email,
+      message: form.message,
+      time: new Date().toLocaleString(),
+    };
 
     emailjs
       .send(
-        "service_9kwy5sl", 
-        "template_cy6wpwn",
+        "service_j2r5nvb",
+        "template_ih4kbue",
         templateParams,
-        "TmkOPqXRXlR4jxdyM" 
+        "c8YzFqiR9ZBVENquT"
       )
       .then(
         () => {
@@ -126,7 +125,8 @@ const templateParams = {
         Contact Us
       </h2>
       <p style={{ marginTop: 0, marginBottom: 18, color: "#334155" }}>
-        Have feedback or a project idea? Send a message — I’ll get back to you soon.
+        Have feedback or a project idea? Send a message — I’ll get back to you
+        soon.
       </p>
 
       <form onSubmit={handleSubmit} noValidate>
