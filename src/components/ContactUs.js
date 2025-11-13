@@ -1,6 +1,7 @@
 // ContactUs.js
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 export default function ContactUs() {
   const [form, setForm] = useState({
@@ -109,10 +110,12 @@ const templateParams = {
         () => {
           setStatus("success");
           setForm({ name: "", email: "", message: "" });
+          toast.success("Message sent successfully!");
         },
         (error) => {
           console.error("EmailJS Error:", error);
           setStatus("error");
+          toast.error("Failed to send message. Please try again later.");
         }
       );
   };
