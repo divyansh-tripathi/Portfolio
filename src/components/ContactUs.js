@@ -90,13 +90,13 @@ export default function ContactUs() {
       return;
     }
 
-    const templateParams = {
-      from_name: form.name,
-      from_email: form.email,
-      message: form.message,
-      subject: `New Portfolio Message from ${form.name}`,
-      time: new Date().toLocaleString(),
-    };
+const templateParams = {
+  from_name: form.name,
+  from_email: form.email,
+  message: form.message,
+  time: new Date().toLocaleString(),
+};
+
 
     emailjs
       .send(
