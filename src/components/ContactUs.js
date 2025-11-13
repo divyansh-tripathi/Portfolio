@@ -100,10 +100,10 @@ export default function ContactUs() {
 
     emailjs
       .send(
-        "service_9kwy5sl", // 🔹 Replace with your EmailJS Service ID
-        "template_leho5uh", // 🔹 Replace with your EmailJS Template ID (admin mail)
+        "service_9kwy5sl", 
+        "template_cy6wpwn",
         templateParams,
-        "TmkOPqXRXlR4jxdyM" // 🔹 Replace with your EmailJS Public Key
+        "TmkOPqXRXlR4jxdyM" 
       )
       .then(
         () => {
