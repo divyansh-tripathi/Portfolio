@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 
 //! make pdf change
-import pdf from "../../Assets/../Assets/Divyansh-resume.pdf";
+import pdf from "../../Assets/Divyansh_Tripathi_Resume.pdf";
 
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
